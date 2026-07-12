@@ -1,9 +1,9 @@
-<svg viewBox="0 0 64 56" xmlns="http://www.w3.org/2000/svg">
-  <!-- bord (brim) : or plein, bien visible sur fond sombre -->
-  <ellipse cx="32" cy="46" rx="28" ry="5.2" fill="#f2c14e"/>
-  <!-- couronne noire avec contour or épais (lisible en petit) -->
-  <path d="M22 45 L20.5 15 Q20.5 9.5 25 9.5 L39 9.5 Q43.5 9.5 43.5 15 L42 45 Z"
-        fill="#15161b" stroke="#f2c14e" stroke-width="2.6" stroke-linejoin="round"/>
+<svg viewBox="0 0 64 52" xmlns="http://www.w3.org/2000/svg">
+  <!-- bord (brim) -->
+  <ellipse cx="32" cy="44" rx="27" ry="4.6" fill="#202127" stroke="#f2c14e" stroke-width="1.5"/>
+  <!-- couronne noire, légèrement évasée -->
+  <path d="M23 42 L21.5 15 Q21.5 11 25.5 11 L38.5 11 Q42.5 11 42.5 15 L41 42 Z"
+        fill="#202127" stroke="#f2c14e" stroke-width="1.5" stroke-linejoin="round"/>
   <!-- bandeau doré -->
-  <rect x="20.8" y="35.5" width="22.4" height="7.4" fill="#f2c14e"/>
+  <rect x="22" y="34.5" width="20" height="6.2" fill="#f2c14e"/>
 </svg>
