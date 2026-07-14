@@ -281,6 +281,17 @@ h1{
 }
 .founder-note strong{font-family:var(--disp);font-weight:600;text-transform:uppercase;font-size:1.3rem;color:var(--gold);letter-spacing:.03em}
 .founder-note span{color:var(--grey);font-size:.95rem;max-width:34rem;flex:1 1 22rem}
+/* Founding −50% stamp (style B — croche, gold border, doux flash) */
+.founding-stamp{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;flex:none;
+  transform:rotate(-7deg);padding:.55rem .8rem;border-radius:.6rem;text-align:center;line-height:1;
+  background:radial-gradient(130% 130% at 28% 18%,#e64a30,#c8321f 62%);color:#fff;border:2px dashed #ffd36b;
+  box-shadow:0 0 0 3px rgba(255,211,107,.22),0 7px 18px rgba(200,50,31,.5),0 0 24px rgba(255,170,60,.5);
+  animation:foundingFlash 1.9s ease-in-out infinite}
+.founding-stamp .fs-big{font-family:var(--disp,inherit);font-size:1.5rem;font-weight:900;text-shadow:0 1px 2px rgba(0,0,0,.35)}
+.founding-stamp .fs-sm{font-size:.62rem;font-weight:800;letter-spacing:.13em;margin-top:.18rem;color:#ffe6ab;white-space:nowrap}
+@keyframes foundingFlash{0%,100%{box-shadow:0 0 0 3px rgba(255,211,107,.22),0 7px 18px rgba(200,50,31,.42),0 0 16px rgba(255,170,60,.4)}
+  50%{box-shadow:0 0 0 5px rgba(255,211,107,.5),0 7px 22px rgba(200,50,31,.6),0 0 40px rgba(255,180,70,.85)}}
+@media(prefers-reduced-motion:reduce){.founding-stamp{animation:none}}
 
 /* ---------- prix + panier (Pat 11 juil) ---------- */
 .row{grid-template-columns:4rem 1fr 1.1fr auto auto}
@@ -583,53 +594,54 @@ footer{border-top:1px solid var(--line);padding:0 0 3rem}
         <h3 data-fr="Shorts &amp; clips">Shorts &amp; clips</h3>
         <p class="desc" data-fr="Ta longue vidéo, coupée aux moments que le monde regarde vraiment. Vertical, prêt à publier.">Your long video, cut down to the moments people actually watch. Vertical, ready to post.</p>
         <span class="flag hot" data-fr="Demande nº 1">Most requested</span>
-        <div class="buy"><span class="price">35&nbsp;$</span><button class="add" aria-label="Ajouter au panier" onclick="addCart('Shorts &amp; clips',35)">＋</button></div>
+        <div class="buy"><span class="price">$40</span><button class="add" aria-label="Ajouter au panier" onclick="addCart('Shorts &amp; clips',40)">＋</button></div>
       </div>
       <div class="row">
         <span class="row-num">S·02</span>
         <h3 data-fr="Sous-titrage">Subtitling</h3>
         <p class="desc" data-fr="Des sous-titres propres, synchronisés, relus par un humain. FR · EN.">Clean, synced captions, proofed by a human. FR · EN.</p>
         <span class="flag" data-fr="Livraison rapide">Fast turnaround</span>
-        <div class="buy"><span class="price">30&nbsp;$</span><button class="add" aria-label="Ajouter au panier" onclick="addCart('Sous-titrage / Subtitling',30)">＋</button></div>
+        <div class="buy"><span class="price">$70</span><button class="add" aria-label="Ajouter au panier" onclick="addCart('Sous-titrage / Subtitling',70)">＋</button></div>
       </div>
       <div class="row">
         <span class="row-num">S·03</span>
         <h3 data-fr="Recyclage de contenu">Repurposing</h3>
         <p class="desc" data-fr="Une vidéo entre. Un article, une série de posts pis une infolettre sortent. Notre pièce signature.">One video goes in. An article, a run of posts and a newsletter come out. Our signature piece.</p>
         <span class="flag" data-fr="Signature">Signature</span>
-        <div class="buy"><span class="price">45&nbsp;$</span><button class="add" aria-label="Ajouter au panier" onclick="addCart('Recyclage / Repurposing',45)">＋</button></div>
+        <div class="buy"><span class="price">$100</span><button class="add" aria-label="Ajouter au panier" onclick="addCart('Recyclage / Repurposing',100)">＋</button></div>
       </div>
       <div class="row">
         <span class="row-num">S·04</span>
         <h3 data-fr="Rédaction &amp; posts">Writing &amp; posts</h3>
         <p class="desc" data-fr="Textes, posts et légendes qui sonnent comme toi — pas comme une brochure.">Copy, posts and captions that sound like you — not like a brochure.</p>
         <span class="flag" data-fr="Dans ta voix">In your voice</span>
-        <div class="buy"><span class="price">30&nbsp;$</span><button class="add" aria-label="Ajouter au panier" onclick="addCart('Rédaction &amp; posts / Writing',30)">＋</button></div>
+        <div class="buy"><span class="price">$45</span><button class="add" aria-label="Ajouter au panier" onclick="addCart('Rédaction &amp; posts / Writing',45)">＋</button></div>
       </div>
       <div class="row">
         <span class="row-num">S·05</span>
         <h3 data-fr="Traduction &amp; adaptation">Translation &amp; adaptation</h3>
         <p class="desc" data-fr="FR · EN · ES. Adapté, pas juste traduit — le ton survit au voyage.">FR · EN · ES. Adapted, not just translated — the tone survives the trip.</p>
         <span class="flag">FR · EN · ES</span>
-        <div class="buy"><span class="price">25&nbsp;$</span><button class="add" aria-label="Ajouter au panier" onclick="addCart('Traduction / Translation',25)">＋</button></div>
+        <div class="buy"><span class="price">$45</span><button class="add" aria-label="Ajouter au panier" onclick="addCart('Traduction / Translation',45)">＋</button></div>
       </div>
     </div>
 
     <div class="upsells rv" role="list" aria-label="Add-on services">
       <span class="lbl" data-fr="En extra, sur n'importe quelle job — clique pour ajouter :">Bolt-ons, on any job — click to add:</span>
-      <button class="chip" role="listitem" data-fr="Titres &amp; descriptions SEO · 20 $" onclick="addCart('Titres &amp; descriptions SEO',20)">SEO titles &amp; descriptions · 20 $</button>
-      <button class="chip" role="listitem" data-fr="Transcription · 25 $" onclick="addCart('Transcription',25)">Transcription · 25 $</button>
-      <button class="chip" role="listitem" data-fr="Voix off · 35 $" onclick="addCart('Voix off / Voiceover',35)">Voiceover · 35 $</button>
-      <button class="chip" role="listitem" data-fr="Relecture · 20 $" onclick="addCart('Relecture / Proofing',20)">Proofing · 20 $</button>
-      <button class="chip" role="listitem" data-fr="Résumés · 20 $" onclick="addCart('Résumés / Summaries',20)">Summaries · 20 $</button>
-      <button class="chip" role="listitem" data-fr="Nettoyage audio · 30 $" onclick="addCart('Nettoyage audio / Audio cleanup',30)">Audio cleanup · 30 $</button>
-      <button class="chip" role="listitem" data-fr="Montage simple · 50 $" onclick="addCart('Montage simple / Simple edits',50)">Simple edits · 50 $</button>
+      <button class="chip" role="listitem" data-fr="Titres &amp; descriptions SEO · $25" onclick="addCart('Titres &amp; descriptions SEO',25)">SEO titles &amp; descriptions · $25</button>
+      <button class="chip" role="listitem" data-fr="Transcription · $40" onclick="addCart('Transcription',40)">Transcription · $40</button>
+      <button class="chip" role="listitem" data-fr="Voix off · $75" onclick="addCart('Voix off / Voiceover',75)">Voiceover · $75</button>
+      <button class="chip" role="listitem" data-fr="Relecture · $30" onclick="addCart('Relecture / Proofing',30)">Proofing · $30</button>
+      <button class="chip" role="listitem" data-fr="Résumés · $30" onclick="addCart('Résumés / Summaries',30)">Summaries · $30</button>
+      <button class="chip" role="listitem" data-fr="Nettoyage audio · $35" onclick="addCart('Nettoyage audio / Audio cleanup',35)">Audio cleanup · $35</button>
+      <button class="chip" role="listitem" data-fr="Montage simple · $75" onclick="addCart('Montage simple / Simple edits',75)">Simple edits · $75</button>
     </div>
 
     <div class="founder-note rv brk">
       <span class="brk-b" aria-hidden="true"></span>
+      <span class="founding-stamp" aria-label="Founding 50 percent off, first 50 clients"><span class="fs-big">−50%</span><span class="fs-sm">FOUNDING · 50</span></span>
       <strong data-fr="Tarifs fondateurs.">Founding rates.</strong>
-      <span data-fr="Des prix volontairement sous le marché pendant qu'on bâtit notre mur de preuves — et 15 % de moins pour les dix premiers clients, appliqué à la caisse. Les prix sont juste ici : ajoute ce dont t'as besoin.">Deliberately under market while we build our wall of proof — and a further 15% off for the first ten clients, applied at checkout. Prices are right here: add what you need.</span>
+      <span data-fr="Le vrai spécial de fondation : 50 % de rabais pour les 50 premiers clients, appliqué à la caisse. Prix en USD. Les prix sont juste ici : ajoute ce dont t'as besoin.">The real founding special: 50% off for the first 50 clients, applied at checkout. Prices in USD. Prices are right here: add what you need.</span>
       <button class="btn" onclick="openCart()" data-fr="Voir mon panier">Open my cart</button>
     </div>
   </div>
@@ -686,7 +698,7 @@ footer{border-top:1px solid var(--line);padding:0 0 3rem}
       </article>
     </div>
 
-    <p class="price-line rv" data-fr="Systèmes livrés complets — installation + accompagnement inclus. Packs à partir de <b>180&nbsp;$/mois</b> · machines à partir de <b>300&nbsp;$/mois</b> · configuration sur mesure sur devis.">Systems ship complete — install + guidance included. Packs from <b>$180/mo</b> · machines from <b>$300/mo</b> · bespoke setups by quote.</p>
+    <p class="price-line rv" data-fr="Systèmes livrés complets — installation + accompagnement inclus. À partir de <b>1 500 $ installation</b> + <b>1 000 $/mois</b> · sur mesure sur devis. Prix en USD.">Systems ship complete — install + guidance included. From <b>$1,500 setup</b> + <b>$1,000/mo</b> · bespoke by quote. Prices in USD.</p>
     <p class="ship-note rv"><b data-fr="Chaque système est livré complet.">Every system ships complete.</b> <span data-fr="Documentation, guide d'installation, pis un assistant qui t'accompagne dans la mise en place. Et Pat reste dans la boucle — c'est lui qui signe la qualité.">Documentation, a setup guide, and a helper that walks you through installation. And Pat stays in the loop — he's the one who signs off on quality.</span></p>
   </div>
 </section>
@@ -823,7 +835,7 @@ footer{border-top:1px solid var(--line);padding:0 0 3rem}
 
 <!-- ============ PANIER (Pat 11 juil) ============ -->
 <button class="cart-fab" id="cartFab" hidden onclick="openCart()">
-  🛒 <span data-fr="Panier">Cart</span> <span class="ct" id="cartCount">0</span> · <span id="cartFabTotal">0&nbsp;$</span>
+  🛒 <span data-fr="Panier">Cart</span> <span class="ct" id="cartCount">0</span> · <span id="cartFabTotal">$0</span>
 </button>
 <div class="cart-panel" id="cartPanel" aria-hidden="true">
   <div class="ov" onclick="closeCart()"></div>
@@ -831,9 +843,9 @@ footer{border-top:1px solid var(--line);padding:0 0 3rem}
     <div class="dh"><h3 data-fr="Ton panier">Your cart</h3><button aria-label="Fermer" onclick="closeCart()">×</button></div>
     <div class="cart-items" id="cartItems"></div>
     <div class="cart-foot">
-      <div class="tot"><span data-fr="Total (avant −15 % fondateur)">Total (before −15% founding)</span><b id="cartTotal">0&nbsp;$</b></div>
+      <div class="tot"><span data-fr="Total en USD (avant −50 % fondateur)">Total in USD (before −50% founding)</span><b id="cartTotal">$0</b></div>
       <button class="btn solid" style="width:100%;justify-content:center" onclick="checkout()" data-fr="Envoyer ma commande">Send my order</button>
-      <p class="note" data-fr="On confirme par courriel, tu paies, on livre — le tarif fondateur −15 % est appliqué à la confirmation. Le paiement par carte en ligne s'ajoute bientôt.">We confirm by email, you pay, we deliver — the −15% founding rate is applied on confirmation. Online card checkout is coming soon.</p>
+      <p class="note" data-fr="On confirme par courriel, tu paies, on livre — le tarif fondateur −50 % (50 premiers clients) est appliqué à la confirmation. Prix en USD. Le paiement par carte sécurisé se fait par lien à la confirmation.">We confirm by email, you pay, we deliver — the −50% founding rate (first 50 clients) is applied on confirmation. Prices in USD. Secure card payment is sent by link at confirmation.</p>
     </div>
   </div>
 </div>
@@ -841,7 +853,7 @@ footer{border-top:1px solid var(--line);padding:0 0 3rem}
 <script>
 (function(){
   var cart=[];
-  function fmt(n){return n+' $';}
+  function fmt(n){return "$"+n;}
   function total(){return cart.reduce(function(s,x){return s+x.price;},0);}
   window.addCart=function(name,price){cart.push({name:name,price:price});renderCart();flashFab();};
   window.rmCart=function(i){cart.splice(i,1);renderCart();};
@@ -863,8 +875,8 @@ footer{border-top:1px solid var(--line);padding:0 0 3rem}
   function flashFab(){var f=document.getElementById('cartFab');f.style.transform='translateY(-4px)';setTimeout(function(){f.style.transform='';},160);}
   window.checkout=function(){
     if(!cart.length)return;
-    var lines=cart.map(function(x){return '- '+x.name+' : '+x.price+' $';}).join('\n');
-    var body='Bonjour / Hi,\n\nJe veux commander / I want to order:\n'+lines+'\n\nSous-total / Subtotal (avant -15% fondateur): '+total()+' $\n\nMon brief (quoi, pour quand, quel ton) / My brief (what, by when, what tone):\n';
+    var lines=cart.map(function(x){return '- '+x.name+' : $'+x.price;}).join('\n');
+    var body='Bonjour / Hi,\n\nJe veux commander / I want to order:\n'+lines+'\n\nSous-total / Subtotal (avant -50% fondateur, USD): '+total()+' USD\n\nMon brief (quoi, pour quand, quel ton) / My brief (what, by when, what tone):\n';
     window.location.href='mailto:contact@ahat4pat.com?subject='+encodeURIComponent('Commande AHat4Pat / Order')+'&body='+encodeURIComponent(body);
   };
 })();
