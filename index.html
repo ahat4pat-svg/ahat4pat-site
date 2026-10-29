@@ -48,6 +48,7 @@ ul.ticks{list-style:none;padding:0;margin:0 0 28px}
 ul.ticks li{padding:9px 0 9px 28px;border-bottom:1px solid var(--line);position:relative;color:var(--fg2)}
 ul.ticks li::before{content:"";position:absolute;left:4px;top:19px;width:8px;height:8px;border-radius:50%;background:var(--orange)}
 ul.ticks li b{color:var(--fg1);font-weight:600}
+.reel{display:block;width:100%;aspect-ratio:16/9;margin-top:22px;border-radius:14px;border:1px solid var(--line);background:var(--bg0)}
 .doors{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:28px}
 .door{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:26px}
 .door .n{font:300 15px/1 Spectral,serif;color:var(--blue)}
@@ -60,6 +61,7 @@ ul.ticks li b{color:var(--fg1);font-weight:600}
 .about .quote{font:300 30px/1.3 Spectral,serif;color:var(--fg1);border-left:2px solid var(--orange);padding-left:20px}
 footer{border-top:1px solid var(--line);padding:32px 0 48px;color:var(--fg3);font-size:14px}
 footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
+.foot-links{display:flex;flex-wrap:wrap;gap:18px}
 footer a{text-decoration:none}footer a:hover{color:var(--fg1)}
 @media (max-width:820px){
  .hero{background-image:url(assets/hero-hat-portrait.jpg);background-position:center 30%;min-height:88vh}
@@ -68,6 +70,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--fg1)}
  .about{padding:0 24px}
  .doors{grid-template-columns:1fr}
  .nav{gap:14px}
+ .nav .soc{display:none}
  section{padding:64px 0}
  .price{font-size:96px}
 }
@@ -76,7 +79,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--fg1)}
 <body>
 <header><div class="wrap">
  <a class="brand" href="/">AHat4Pat</a>
- <nav class="nav"><a href="#single-cut">Single Cut</a><a href="https://www.instagram.com/ahat4pat/">Instagram</a><a href="https://www.linkedin.com/in/patrick-lemieux-997393409/">LinkedIn</a></nav>
+ <nav class="nav"><a href="#single-cut">Single Cut</a><a href="#work">Work</a><a class="soc" href="https://www.instagram.com/ahat4pat/">Instagram</a><a class="soc" href="https://www.linkedin.com/in/patrick-lemieux-997393409/">LinkedIn</a><a class="soc" href="https://www.facebook.com/AHat4Pat">Facebook</a></nav>
 </div></header>
 
 <section class="hero" aria-label="Intro"><div class="wrap">
@@ -109,6 +112,14 @@ footer a{text-decoration:none}footer a:hover{color:var(--fg1)}
  </div>
 </div></section>
 
+<section id="work" aria-label="Recent work" style="padding-top:0"><div class="wrap">
+ <div class="eyebrow">Recent work</div>
+ <h2>See the cut before you send yours.</h2>
+ <video class="reel" controls playsinline preload="none" poster="assets/showreel-poster.jpg">
+  <source src="assets/showreel.mp4" type="video/mp4">
+ </video>
+</div></section>
+
 <section aria-label="Three doors" style="padding-top:0"><div class="wrap">
  <div class="eyebrow">One hat. Three doors.</div>
  <div class="doors">
@@ -125,7 +136,7 @@ footer a{text-decoration:none}footer a:hover{color:var(--fg1)}
 
 <footer><div class="wrap">
  <span>© 2026 AHat4Pat · <a href="mailto:ahat4pat@gmail.com">ahat4pat@gmail.com</a></span>
- <span><a href="legal.html">Legal</a></span>
+ <span class="foot-links"><a href="https://www.instagram.com/ahat4pat/">Instagram</a><a href="https://www.linkedin.com/in/patrick-lemieux-997393409/">LinkedIn</a><a href="https://www.facebook.com/AHat4Pat">Facebook</a><a href="legal.html">Legal</a></span>
 </div></footer>
 </body>
 </html>
